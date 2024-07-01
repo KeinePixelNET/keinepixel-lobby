@@ -44,6 +44,7 @@ dependencies {
     compileOnly "eu.koboo.atcommand:platform-spigot:${at_Command}"
 
     implementation "eu.koboo.en2do:en2do:${en2do}"
+    implementation "org.reflections:reflections:${reflections}"
 
     compileOnly "org.projectlombok:lombok:${lombok}"
     annotationProcessor "org.projectlombok:lombok:${lombok}"
