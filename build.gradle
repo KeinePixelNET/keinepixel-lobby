@@ -15,10 +15,35 @@ repositories {
         name = "sonatype"
         url = "https://oss.sonatype.org/content/groups/public/"
     }
+    maven {
+        name = "infernalsuite"
+        url = "https://repo.infernalsuite.com/repository/maven-snapshots/"
+    }
+    maven {
+        name = "rapture"
+        url = "https://repo.rapture.pw/repository/maven-releases/"
+    }
+    maven {
+        name = "koboo-reposilite"
+        url = "https://reposilite.koboo.eu/releases/"
+    }
+    maven {
+        name = "jitpack"
+        url = "https://jitpack.io"
+    }
 }
 
 dependencies {
-    compileOnly "io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT"
+    compileOnly "io.papermc.paper:paper-api:${paper}"
+    compileOnly "com.infernalsuite.aswm:api:${slimeWorldManager}"
+
+    compileOnly "eu.koboo.atcommand:core:${at_Command}"
+    compileOnly "eu.koboo.atcommand:platform-spigot:${at_Command}"
+
+    implementation "eu.koboo.en2do:en2do:${en2do}"
+
+    compileOnly "org.projectlombok:lombok:${lombok}"
+    annotationProcessor "org.projectlombok:lombok:${lombok}"
 }
 
 def targetJavaVersion = 17
