@@ -7,6 +7,7 @@ version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    mavenLocal()
     maven {
         name = "papermc-repo"
         url = "https://repo.papermc.io/repository/maven-public/"
@@ -34,6 +35,8 @@ repositories {
 }
 
 dependencies {
+    compileOnly "net.keinepixel:api-spigot:${pixelAPI}"
+
     compileOnly "io.papermc.paper:paper-api:${paper}"
     compileOnly "com.infernalsuite.aswm:api:${slimeWorldManager}"
 
