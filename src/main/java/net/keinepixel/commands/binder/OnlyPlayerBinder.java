@@ -5,11 +5,11 @@ import net.keinepixel.LobbyPlugin;
 import net.keinepixel.adventure.ChatAction;
 import org.bukkit.command.ConsoleCommandSender;
 
-public class OnlyPlayerBinder implements OnlyPlayerBinderSpigot {
+public record OnlyPlayerBinder(LobbyPlugin lobbyPlugin) implements OnlyPlayerBinderSpigot {
     @Override
     public void onlyPlayer(ConsoleCommandSender consoleCommandSender) {
         //TODO: Get sender language via API
         //TODO: Language Key: command.generic.only-player
-        consoleCommandSender.sendMessage(ChatAction.of(LobbyPlugin.getInstance().getPrefix()).with("§cOnly players can execute this command!").comp());
+        consoleCommandSender.sendMessage(ChatAction.of(lobbyPlugin.getPrefix()).with("§cOnly players can execute this command!").comp());
     }
 }

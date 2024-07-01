@@ -7,12 +7,12 @@ import net.keinepixel.adventure.ChatAction;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
-public class OnlyConsoleBinder implements OnlyConsoleBinderSpigot {
+public record OnlyConsoleBinder(LobbyPlugin lobbyPlugin) implements OnlyConsoleBinderSpigot {
 
     @Override
     public void onlyConsole(Player player) {
         //TODO: Get sender language via API
         //TODO: Language Key: command.generic.only-console
-        player.sendMessage(ChatAction.of(LobbyPlugin.getInstance().getPrefix()).with("§cOnly the console can execute this command!").comp());
+        player.sendMessage(ChatAction.of(lobbyPlugin.getPrefix()).with("§cOnly the console can execute this command!").comp());
     }
 }
