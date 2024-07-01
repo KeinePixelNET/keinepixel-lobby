@@ -1,0 +1,4 @@
+name: keinepixel-lobby
+version: '${version}'
+main: net.keinepixel.LobbyPlugin
+api-version: '1.20'
