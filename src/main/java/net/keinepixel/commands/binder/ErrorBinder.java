@@ -1,7 +1,6 @@
 package net.keinepixel.commands.binder;
 
 import eu.koboo.atcommand.api.binder.ErrorBinderSpigot;
-import eu.koboo.atcommand.api.binder.OnlyPlayerBinderSpigot;
 import io.netty.util.internal.ThrowableUtil;
 import net.keinepixel.LobbyPlugin;
 import net.keinepixel.adventure.ChatAction;

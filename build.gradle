@@ -1,4 +1,5 @@
 plugins {
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
     id 'java'
 }
 
@@ -32,10 +33,18 @@ repositories {
         name = "jitpack"
         url = "https://jitpack.io"
     }
+    maven {
+        name = "gradle-release-local"
+        url = "https://repo.thesimplecloud.eu/artifactory/list/gradle-release-local/"
+    }
 }
 
 dependencies {
+    compileOnly "net.keinepixel:api-common:${pixelAPI}"
     compileOnly "net.keinepixel:api-spigot:${pixelAPI}"
+    compileOnly "eu.thesimplecloud.simplecloud:simplecloud-api:${simpleCloudApi}"
+
+    implementation "dev.triumphteam:triumph-gui:${triumphGui}"
 
     compileOnly "io.papermc.paper:paper-api:${paper}"
     compileOnly "com.infernalsuite.aswm:api:${slimeWorldManager}"
@@ -50,7 +59,7 @@ dependencies {
     annotationProcessor "org.projectlombok:lombok:${lombok}"
 }
 
-def targetJavaVersion = 17
+def targetJavaVersion = 21
 java {
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     sourceCompatibility = javaVersion

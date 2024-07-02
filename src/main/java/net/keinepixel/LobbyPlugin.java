@@ -26,6 +26,8 @@ public final class LobbyPlugin extends JavaPlugin {
 
     CommandEnvironment<JavaPlugin> commandEnvironment;
 
+    //CloudAPI.getInstance().getCloudServiceGroupManager().getLobbyGroups()
+
     @Override
     public void onEnable() {
         pixelAPI = (PixelAPI) getServer().getPluginManager().getPlugin("PixelAPI");
