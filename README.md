@@ -17,3 +17,10 @@ I hope you find use in this little plugin. Sincerely, [@whynotmax](https://githu
 - eu.koboo.en2do:en2do:3.1.8 -> https://github.com/Koboo/en2do
 - org.reflections:reflections:0.10.2 -> https://github.com/ronmamo/reflections
 - org.projectlombok:lombok:1.18.32 -> https://github.com/projectlombok/lombok
+
+# Thank you's
+An extra big thank you goes to the people listed below. These people made the project possible for me (KeinePixel) and I'm glad they did. **Thank you! <3**
+
+- [@sxbide](https://github.com/sxbide)
+- [@Waischbrot](https://github.com/waischbrot)
+- [@EntixOG](https://github.com/entixog)
