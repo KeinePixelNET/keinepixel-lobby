@@ -3,7 +3,7 @@ I've decided to make this project public since we don't need
 it anymore. Please don't use this AS IS, because it is very
 early in the development stage.
 
-I hope you find use in this little plugin. Sincerely, @whynotmax
+I hope you find use in this little plugin. Sincerely, [@whynotmax](https://github.com/whynotmax)
 
 # Dependencies used
 
