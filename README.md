@@ -19,7 +19,7 @@ I hope you find use in this little plugin. Sincerely, [@whynotmax](https://githu
 - org.projectlombok:lombok:1.18.32 -> https://github.com/projectlombok/lombok
 
 # Thank you's
-An extra big thank you goes to the people listed below. These people made the project possible for me (KeinePixel) and I'm glad they did. **Thank you! <3**
+An extra big thank you goes to the people listed below. These people made the KeinePixel project possible for me and I'm glad they did. **Thank you! <3**
 
 - [@sxbide](https://github.com/sxbide)
 - [@Waischbrot](https://github.com/waischbrot)
